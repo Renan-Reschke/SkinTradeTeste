@@ -53,3 +53,6 @@ jspm_packages
 .yarn-integrity
 test.js
 old
+
+#secret
+secret.json
