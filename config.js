@@ -1,5 +1,5 @@
 'use strict'
-const secret = require('secret')
+const secret = require('./secret')
 module.exports = {
     appID: 730, // 730 - CS:GO
     contextID: 2, // ContextID
@@ -22,13 +22,13 @@ module.exports = {
         steamGroup: '#',
         copyrights: 'Copyright © Class.Skins 2021',  // Copyright text
     },
-    domain: 'class.skins',    // Domain name only, follow the example (no http:// & no www & no /)
-    website: 'http://class.skins',    // Website URL, follow the example (do not add / at the end)
+    domain: 'localhost',    // Domain name only, follow the example (no http:// & no www & no /)
+    website: 'http://localhost',    // Website URL, follow the example (do not add / at the end)
     websitePort: 80,    // Website PORT, don't change it unless you're using a reverse proxy
     tradeMessage: 'Oferta de troca de Class.Skins | Se voce nao requisitou nenhuma troca ou ela parece inconsistente, por favor decline.', // Quite obvious
     rates: {
         ignoreItemsBelow: 0.00, // Ignore items below this price (price * rate < ignoreItemsBelow) - shows (Too Low) for user
-        trashPriceBelow: 0.2,   // Items below this price are considered trash, the trash rate modifier will be applied
+        trashPriceBelow: 0.00,   // Items below this price are considered trash, the trash rate modifier will be applied
         // Items
         user: {
             key: 1,
